@@ -8,9 +8,9 @@ const quiz = [
                     "New York Bulls",
                     "Los Angeles Kings",
                     "Golden State Warriros",
-                    "Huston Rocket"
+                    "Houston Rocket"
                 ],
-                "answer": "Huston Rocket"
+                "answer": "Houston Rocket"
             }
         ]
     },
@@ -48,7 +48,7 @@ const quiz = [
     e.g.
     Subject:  Sport
     Question 1:  Which one is correct team name in NBA?
-    Answer:  Huston Rocket
+    Answer:  Houston Rocket
     -----------------------
     Subject:  Math
     Question 1:  5 + 7 = ?
