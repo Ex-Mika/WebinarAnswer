@@ -35,5 +35,33 @@
             <button type="submit" class="btn btn-primary float-end">Login</button>
         </form>
     </div>
+            <div class="card p-3">
+            <h5 class="card-title">Password Generator</h5>
+            <div class="row align-items-end">
+                <div class="col-md-4">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" class="form-control" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="password">Password:</label>
+                    <input type="text" id="password" name="password" class="form-control" readonly>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-primary" onclick="generatePassword()">Generate Password</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script>
+        function generatePassword() {
+            var length = 12,
+                charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+                retVal = "";
+            for (var i = 0, n = charset.length; i < length; ++i) {
+                retVal += charset.charAt(Math.floor(Math.random() * n));
+            }
+            document.getElementById('password').value = retVal;
+        }
+    </script>
 </body>
 </html>
